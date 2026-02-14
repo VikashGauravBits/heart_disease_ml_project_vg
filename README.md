@@ -3,8 +3,8 @@
 Build a Machine Learning model that predicts whether a heart failure patient will experience a death event (DEATH_EVENT) based on their clinical and demographic data. The goal is to help identify high-risk patients early so timely medical attention and monitoring can be prioritized.
 
 This application evaluates multiple classification models to determine the outcome:
-- **0 → No Death Event (Survived)**
-- **1 → Death Event (Not Survived)**
+- **0 → No Heart disease**
+- **1 → Having Heart disease**
 
 
 ## 2. Dataset Description
@@ -23,18 +23,19 @@ https://www.kaggle.com/datasets/aadarshvelu/heart-failure-prediction-clinical-re
 
 ### Attribute Details
 - **age**: age of the patient (years)
-- **anaemia**: decrease of red blood cells or hemoglobin (boolean)
-- **creatinine phosphokinase (CPK)**: level of the CPK enzyme in the blood (mcg/L)
-- **diabetes**: if the patient has diabetes (boolean) 
-- **ejection fraction**: percentage of blood leaving the heart at each contraction (percentage)  
-- **high blood pressure**: if the patient has hypertension (boolean)
-- **platelets**: platelets in the blood (kiloplatelets/mL)
-- **sex**: female or male (binary)
-- **serum creatinine**: level of serum creatinine in the blood (mg/dL) 
-- **serum sodium**: level of serum sodium in the blood (mEq/L) 
-- **smoking**: woman or man (binary)
-- **time**: level of serum creatinine in the blood (mg/dL) 
-- **DEATH_EVENT**: if the patient died during the follow-up period (boolean)
+- **Sex**: Gender (binary)
+- **cp**: Chest pain type
+- **trestbps**: Resting blood pressure (mm Hg) 
+- **chol**: Serum cholesterol (mg/dl)  
+- **fbs**: Fasting blood sugar > 120 mg/dl (boolean)
+- **restecg**: Resting electrocardiographic results
+- **thalach**: fMaximum heart rate achieved
+- **exang**: Exercise-induced angina(binary) 
+- **oldpeak**: ST depression induced by exercise relative to rest 
+- **slope**: Slope of the peak exercise ST segment
+- **ca**: Number of major vessels colored by fluoroscopy 
+- **thal**: Thalassemia (blood disorder indicator)
+- **target**: Diagnosis of heart disease
 
 
 ## 3. Models Used:
@@ -61,4 +62,5 @@ https://www.kaggle.com/datasets/aadarshvelu/heart-failure-prediction-clinical-re
 | Naive Bayes (Gaussian) | Lowest-performing model among the tested approaches (accuracy 0.799, F1 0.629). The independence assumption likely limits performance on this clinical dataset. |
 | Random Forest | Best overall performer with the highest accuracy (0.966), AUC (0.987), F1 score (0.942), and MCC (0.918). Provides the most balanced and reliable classification results. |
 | XGBoost | Excellent performance with high accuracy (0.955) and AUC (0.984). Precision (0.947) and recall (0.899) are well-balanced, making it a strong alternative to Random Forest. |
+
 
