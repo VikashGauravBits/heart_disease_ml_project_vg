@@ -9,17 +9,16 @@ This application evaluates multiple classification models to determine the outco
 
 ## 2. Dataset Description
 
-This project uses the Heart Failure Clinical Records dataset, which contains real-world clinical information of patients diagnosed with heart failure. The dataset includes demographic details, existing medical conditions, and important lab/clinical measurements such as ejection fraction, serum creatinine, and serum sodium. These attributes are highly useful for predicting a patient’s risk of mortality during the follow-up period.
+This dataset is a clinical dataset for heart disease prediction. It contains patient records with various medical attributes and a target variable indicating whether heart disease is present. It’s widely used in machine learning research to build classification models that predict heart disease risk.
 
 ### Dataset Source
-The dataset was collected from Kaggle:
-https://www.kaggle.com/datasets/aadarshvelu/heart-failure-prediction-clinical-records
+DataSource : Kaggle
 
 ### Dataset Overview
 - **Total Records:** 5000 
-- **Total Columns:** 13
-- **Input Features:** 12
-- **Target Column:** `DEATH_EVENT`
+- **Total Columns:** 14
+- **Input Features:** 13
+- **Target Column:** `target`
 
 ### Attribute Details
 - **age**: age of the patient (years)
@@ -62,5 +61,6 @@ https://www.kaggle.com/datasets/aadarshvelu/heart-failure-prediction-clinical-re
 | Naive Bayes (Gaussian) | Lowest-performing model among the tested approaches (accuracy 0.799, F1 0.629). The independence assumption likely limits performance on this clinical dataset. |
 | Random Forest | Best overall performer with the highest accuracy (0.966), AUC (0.987), F1 score (0.942), and MCC (0.918). Provides the most balanced and reliable classification results. |
 | XGBoost | Excellent performance with high accuracy (0.955) and AUC (0.984). Precision (0.947) and recall (0.899) are well-balanced, making it a strong alternative to Random Forest. |
+
 
 
