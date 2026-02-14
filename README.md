@@ -43,11 +43,11 @@ DataSource : Kaggle
 
 | ML Model Name | Accuracy (%) | AUC | Precision | Recall | F1 Score | MCC |
 |-------------|--------------|-----|----------|--------|---------|-----|
-| Logistic Regression | 0.856 | 0.886 | 0.797 | 0.696 | 0.743 | 0.647 |
-| Decision Tree Classifier | 0.951 | 0.947 | 0.902 | 0.937 | 0.919 | 0.884 |
-| K-Nearest Neighbor Classifier | 0.879 | 0.937 | 0.885 | 0.684 | 0.771 | 0.701 |
-| Naive Bayes (Gaussian) | 0.799 | 0.850 | 0.703 | 0.570 | 0.629 | 0.499 |
-| Random Forest | 0.966 | 0.987 | 0.961 | 0.924 | 0.942 | 0.918 |
+| Logistic Regression | 0.836 | 0.835 | 0.848 | 0.848 | 0.848 | 0.670 |
+| Decision Tree Classifier | 0.738 | 0.739 | 0.774 | 0.727 | 0.750 | 0.476 |
+| K-Nearest Neighbor Classifier | 0.836 | 0.838 | 0.871 | 0.818 | 0.844 | 0.673 |
+| Naive Bayes (Gaussian) | 0.803 | 0.802 | 0.818 | 0.818 | 0.818 | 0.604 |
+| Random Forest | 0.803 | 0.987 | 0.961 | 0.924 | 0.942 | 0.918 |
 | XGBoost | 0.955 | 0.984 | 0.947 | 0.899 | 0.922 | 0.891 |
 
 
@@ -61,6 +61,7 @@ DataSource : Kaggle
 | Naive Bayes (Gaussian) | Lowest-performing model among the tested approaches (accuracy 0.799, F1 0.629). The independence assumption likely limits performance on this clinical dataset. |
 | Random Forest | Best overall performer with the highest accuracy (0.966), AUC (0.987), F1 score (0.942), and MCC (0.918). Provides the most balanced and reliable classification results. |
 | XGBoost | Excellent performance with high accuracy (0.955) and AUC (0.984). Precision (0.947) and recall (0.899) are well-balanced, making it a strong alternative to Random Forest. |
+
 
 
 
