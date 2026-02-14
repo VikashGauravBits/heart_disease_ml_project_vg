@@ -47,20 +47,22 @@ DataSource : Kaggle
 | Decision Tree Classifier | 0.738 | 0.739 | 0.774 | 0.727 | 0.750 | 0.476 |
 | K-Nearest Neighbor Classifier | 0.836 | 0.838 | 0.871 | 0.818 | 0.844 | 0.673 |
 | Naive Bayes (Gaussian) | 0.803 | 0.802 | 0.818 | 0.818 | 0.818 | 0.604 |
-| Random Forest | 0.803 | 0.987 | 0.961 | 0.924 | 0.942 | 0.918 |
-| XGBoost | 0.955 | 0.984 | 0.947 | 0.899 | 0.922 | 0.891 |
+| Random Forest | 0.803 | 0.802 | 0.818 | 0.818 | 0.818 | 0.604 |
+| XGBoost | 0.754 | 0.754 | 0.781 | 0.758 | 0.769 | 0.506 |
 
 
-## Observations on the Performance
+# Heart Disease Prediction Models - Performance Summary
 
 | ML Model Name | Observation about model performance |
-|-------------|-----------------------------------|
-| Logistic Regression | Strong baseline performance with good accuracy (0.856) and AUC (0.886). Precision is decent (0.797), but recall (0.696) is moderate, meaning it may miss some positive (death event) cases. |
-| Decision Tree Classifier | Very high accuracy (0.951) and strong recall (0.937), indicating good detection of positive cases. However, single decision trees may overfit and might not generalize as consistently as ensemble models. |
-| K-Nearest Neighbor Classifier | Shows good overall performance with high AUC (0.937) and strong precision (0.885). Recall (0.684) is lower, suggesting it performs better at avoiding false positives than capturing all positives. |
-| Naive Bayes (Gaussian) | Lowest-performing model among the tested approaches (accuracy 0.799, F1 0.629). The independence assumption likely limits performance on this clinical dataset. |
-| Random Forest | Best overall performer with the highest accuracy (0.966), AUC (0.987), F1 score (0.942), and MCC (0.918). Provides the most balanced and reliable classification results. |
-| XGBoost | Excellent performance with high accuracy (0.955) and AUC (0.984). Precision (0.947) and recall (0.899) are well-balanced, making it a strong alternative to Random Forest. |
+|---------------|-------------------------------------|
+| Logistic Regression | Strong baseline performance with good accuracy (0.836) and AUC (0.835). Precision (0.848) and recall (0.848) are balanced, meaning it catches most positive cases while avoiding too many false alarms. |
+| Decision Tree Classifier | Moderate performance with lower accuracy (0.738) and AUC (0.739). Precision (0.774) is slightly better than recall (0.727), but single trees may overfit and not generalize well compared to ensemble methods. |
+| K-Nearest Neighbor Classifier | Competitive performance with accuracy (0.836) and AUC (0.838). Precision (0.871) is strong, but recall (0.818) is slightly lower, suggesting it is cautious in predicting positives and may miss some cases. |
+| Naive Bayes (Gaussian) | Solid but not top-tier performance with accuracy (0.803) and AUC (0.802). Precision and recall (both 0.818) are balanced, but the independence assumption limits its ability to capture complex relationships. |
+| Random Forest | Performs similarly to Naive Bayes here, with accuracy (0.803) and AUC (0.802). Precision and recall (0.818) are balanced, but the model does not show its usual advantage, possibly due to dataset size or tuning. |
+| XGBoost | Average performance compared to other models, with accuracy (0.754) and AUC (0.754). Precision (0.781) and recall (0.758) are balanced but not outstanding, indicating weaker generalization without hyperparameter optimization. |
+
+
 
 
 
