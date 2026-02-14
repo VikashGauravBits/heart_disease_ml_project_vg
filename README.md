@@ -1,7 +1,8 @@
 ## 1. Problem Statement
 
 Cardiovascular diseases are among the leading causes of mortality worldwide. Early detection of heart disease can significantly improve patient outcomes by enabling timely medical intervention. However, diagnosis often requires multiple clinical tests and expert interpretation, which can be resource-intensive and prone to variability.
-This dataset provides patient records with demographic information, clinical measurements, and diagnostic test results. The goal is to build machine learning models that can predict the presence or absence of heart disease (target variable) based on these attributes. By analyzing features such as age, sex, chest pain type, blood pressure, cholesterol levels, ECG results, maximum heart rate, and exercise-induced angina, predictive models can assist healthcare professionals in identifying high-risk patients more efficiently..
+
+This dataset provides patient records with demographic information, clinical measurements, and diagnostic test results. The goal is to build machine learning models that can predict the presence or absence of heart disease (target variable) based on these attributes. By analyzing features such as age, sex, chest pain type, blood pressure, cholesterol levels, ECG results, maximum heart rate, and exercise-induced angina, predictive models can assist healthcare professionals in identifying high-risk patients more efficiently.
 
 This application evaluates multiple classification models to determine the outcome:
 - **0 → No Heart disease**
@@ -62,6 +63,7 @@ DataSource : Kaggle
 | Naive Bayes (Gaussian) | Solid but not top-tier performance with accuracy (0.803) and AUC (0.802). Precision and recall (both 0.818) are balanced, but the independence assumption limits its ability to capture complex relationships. |
 | Random Forest | Performs similarly to Naive Bayes here, with accuracy (0.803) and AUC (0.802). Precision and recall (0.818) are balanced, but the model does not show its usual advantage, possibly due to dataset size or tuning. |
 | XGBoost | Average performance compared to other models, with accuracy (0.754) and AUC (0.754). Precision (0.781) and recall (0.758) are balanced but not outstanding, indicating weaker generalization without hyperparameter optimization. |
+
 
 
 
